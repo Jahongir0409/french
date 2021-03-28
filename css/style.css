@@ -1,0 +1,109 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1A1A1A;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.container {
+  width: 1250px;
+  padding: 0 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+  width: 400px;
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 15px grey;
+  margin-bottom: 40px;
+
+}
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.heading-primary {
+  text-align: center;
+  color: white;
+  text-shadow:  5px 2px orange;
+  font-size: 45px;
+  font-family: 'Akaya Telivigala';
+  margin-bottom: 40px;
+  margin: 20px;
+  padding: 0;
+
+}
+img {
+  box-shadow: 0 0 5px 3px #76FF5A;
+  padding: 5px;
+}
+.heading-secondary{
+  font-family: 'Dancing Script';
+  font-size: 30px;
+}
+button {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 5px 2px blue;
+  color: red;
+ font-family: 'Akaya Telivigala';
+   font-size: 20px;
+}
+@media only screen and (max-width: 450px) {
+  .container {
+    width: 420px;
+
+  }
+  .heading-primary  {
+    font-size: 35px;
+  }
+  .main-wrapper {
+    width: 380px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 380px;
+  }
+  .main-wrapper {
+    width: 370px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .container {
+    width: 340px;
+  }
+  .main-wrapper {
+    width: 340px;
+  }
+}
